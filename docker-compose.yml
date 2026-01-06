@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:16
+    container_name: dvd_rental
+    environment:
+      POSTGRES_DB: dvd_db
+      POSTGRES_USER: dvd_user
+      POSTGRES_PASSWORD: dvd_secret
+    ports:
+      - "5432:5432"
